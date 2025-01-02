@@ -1,23 +1,24 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #eae6dd;
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-header{
+header {
+    position: fixed;
     z-index: 4;
     width: 100%;
     height: 10vh;
@@ -27,17 +28,17 @@ header{
     background-color: white;
 }
 
-header .logo h1{
-   font-size: 2rem;
+header .logo h1 {
+    font-size: 2rem;
     color: #b2804e;
 }
 
-header .links{
+header .links {
     display: inline-flex;
     gap: 4rem;
 }
 
-header .links .link a{
+header .links .link a {
     font-weight: 500;
     font-size: 0.9rem;
     color: black;
@@ -47,13 +48,13 @@ header .links .link a{
 }
 
 header .links a:hover,
-header .links .link a:hover::before{
-    width:100%;
+header .links .link a:hover::before {
+    width: 100%;
     color: #b2804e;
     text-shadow: 0 0 15px #b2804e;
 }
 
-header .button button{
+header .button button {
     cursor: pointer;
     width: 120px;
     height: 40px;
@@ -67,16 +68,16 @@ header .button button{
     transition: 0.2s linear;
 }
 
-header .button button:hover{
+header .button button:hover {
     background-color: #b07e50;
 }
 
-section{
+section {
     width: 100%;
     height: 90vh;
 }
 
-.home{
+.home {
     width: 100%;
     height: 100%;
     display: flex;
@@ -84,32 +85,33 @@ section{
     align-items: center;
 }
 
-.home .home-content{
+.home .home-content {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 10%;
     margin-bottom: 100px;
     margin-left: 15%;
     line-height: 2rem;
 }
 
-.home-content h5{
+.home-content h5 {
     font-size: 1rem;
 }
 
-.home-content h1{
+.home-content h1 {
     color: #b07e50;
     font-size: 3rem;
     line-height: 3rem;
     white-space: nowrap;
 }
 
-.home-content p{
+.home-content p {
+    margin-top: 0.7em;
     font-size: 1rem;
     line-height: 2rem;
 }
 
-.home .social-icons a{
+.home .social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -123,13 +125,13 @@ section{
     margin: 1.5rem 1.5rem 2rem 0;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: (0, 0, 0);
     transform: scale(1.3) translateY(-5px);
     box-shadow: 0 0 15px #b07e50;
 }
 
-.home button{
+.home button {
     cursor: pointer;
     width: 120px;
     height: 40px;
@@ -143,22 +145,76 @@ section{
     transition: 0.2s linear;
 }
 
-button:hover{
+button:hover {
     background-color: #b07e50;
 }
 
-.home .home-img{
+.home .home-img {
     width: 100%;
     height: 80%;
     margin-top: 3px;
     margin-left: 10%;
+    margin-right: 5%;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.home-img img{
-    margin-top: 10px;
+.home-img img {
+    margin-top: 10%;
     margin-bottom: 50px;
     border-radius: 15px;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f4fcff;
+}
+
+.about .abt-image {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    margin-right: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.abt-image img {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    margin-left: 50%;
+}
+
+.about .abt-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-right: 15%;
+    line-height: 2rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-content h1 {
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-bottom: 20px;
+   
+}
+
+.abt-content p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    color: black;
+    border: 20px solid transparent;
+    border-radius: 10px;
+    background-color: #eae6dd;
 }
