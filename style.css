@@ -90,7 +90,7 @@ section{
     margin-top: 10px;
     margin-bottom: 100px;
     margin-left: 15%;
-    
+    line-height: 2rem;
 }
 
 .home-content h5{
@@ -100,10 +100,13 @@ section{
 .home-content h1{
     color: #b07e50;
     font-size: 3rem;
+    line-height: 3rem;
+    white-space: nowrap;
 }
 
 .home-content p{
     font-size: 1rem;
+    line-height: 2rem;
 }
 
 .home .social-icons a{
