@@ -78,6 +78,45 @@ header .button button:hover {
     background-color: #b07e50;
 }
 
+header svg{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    fill: black;
+    cursor: pointer;
+    display: none;
+}
+
+header .dropdown{
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    transform: translateY(-300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+header .dropdown a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+    transition: 0.2s linear;
+}
+
+.dropdown a:hover{
+    color: #b2804e;
+    text-shadow: 0 0 15px #b2804e;
+}
+
 section {
     width: 100%;
     height: 90vh;
