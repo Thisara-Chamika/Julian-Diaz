@@ -246,7 +246,7 @@ button:hover {
     margin-top: 5%;
     margin-bottom: 20px;
     margin-left: 50%;
-    color: black;
+    color:  #9a6e46;
 }
 
 .works .cards{
@@ -354,6 +354,19 @@ button:hover {
     font-size: 0.9rem;
     color: #000000;
     margin-bottom: 20px;
-    line-height: 1.2rem;
+    line-height: 1.1rem;
+}
+
+/* Footer */
+
+.footer .copyrights {
+    background-color: #e8eced;
+    color: #b2804e;
+    font-size: 0.7rem;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
