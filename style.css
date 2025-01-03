@@ -409,3 +409,156 @@ button:hover {
     align-items: center;
 }
 
+/* Base Responsive Design */
+@media (max-width: 1200px) {
+    .home .home-content {
+        margin-left: 10%;
+        margin-bottom: 80px;
+    }
+
+    .home .home-img {
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+
+    .about .abt-content {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    .works .cards,
+    .Feedback .cards {
+        flex-wrap: wrap;
+    }
+
+    .works .cards .card,
+    .Feedback .cards .card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    header .links {
+        display: none;
+    }
+
+    header svg {
+        display: block;
+    }
+
+    header .dropdown {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 10px;
+    }
+
+    header .dropdown a {
+        color: white;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home .home-content {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .home .home-img {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about .abt-image,
+    .about .abt-content {
+        margin: 20px auto;
+    }
+
+    .works .cards .card,
+    .Feedback .cards .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .home .home-content h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .works h1,
+    .Feedback h1 {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .button button {
+        width: 100px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .home-content p {
+        font-size: 0.8rem;
+    }
+
+    .home button {
+        width: 100px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .home-img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about .abt-image img {
+        width: 80%;
+    }
+
+    .works .cards,
+    .Feedback .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .works .cards .card,
+    .Feedback .cards .card {
+        width: 90%;
+    }
+
+    .footer .copyrights {
+        font-size: 0.6rem;
+    }
+}
